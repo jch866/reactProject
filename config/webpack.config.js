@@ -128,6 +128,7 @@ module.exports = function(webpackEnv) {
           loader: require.resolve(preProcessor),
           options: {
             sourceMap: true,
+            javascriptEnabled: true
           },
         }
       );
@@ -380,6 +381,14 @@ module.exports = function(webpackEnv) {
                       },
                     },
                   ],
+                  //自动导入antd的样式 可实现按需加载
+                  [
+                    "babel-plugin-import",
+                    {
+                      libraryName: "antd",
+                      style: true
+                    }
+                  ]
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
