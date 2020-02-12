@@ -9,7 +9,19 @@ export default class IRouter extends React.Component{
         return (
             <Router>
                 <Home>
-                    <Route exact={true} path ='/' component ={Main}></Route>
+                    {/* 两种render都可以 */}
+                    {/* <Route path ='/main'render={()=>{
+                        return (
+                        <Main>
+                            <Route path ='/main/a' component ={About}></Route> 
+                         </Main>
+                         )}}></Route> */}
+                    <Route path ='/main'render={()=>
+                        <Main>
+                            <Route path ='/main/a' component ={About}></Route> 
+                         </Main>
+                         }>   
+                     </Route>
                     <Route path ='/about' component ={About}></Route>
                     <Route path ='/topic' component ={Topic}></Route>
                 </Home>
