@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // eslint-disable-next-line
 import App from './App';
-// eslint-disable-next-line
-import Todolist from "./Todolist";
-import Lify from "./pages/demo/lify";
+// import Admin from "./admin";
+import Home from "./pages/router_demo/router1/home"
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Lify />, document.getElementById('root'));
+ReactDOM.render(<Home />, document.getElementById('root'));
 // ReactDOM.render(<Todolist />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
