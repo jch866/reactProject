@@ -4,10 +4,10 @@ import './index.css';
 // eslint-disable-next-line
 import App from './App';
 // import Admin from "./admin";
-import Home from "./pages/router_demo/router1/home"
+import IRouter from "./pages/router_demo/router2/router"
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<IRouter />, document.getElementById('root'));
 // ReactDOM.render(<Todolist />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
