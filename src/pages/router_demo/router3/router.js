@@ -2,6 +2,7 @@ import React from 'react';
 import {HashRouter as Router,Route } from 'react-router-dom';
 import Main from './Main';
 import About from './../router1/About';
+import Info from './Info';
 import Topic from './../router1/Topic';
 import Home from './home'
 export default class IRouter extends React.Component{
@@ -18,7 +19,7 @@ export default class IRouter extends React.Component{
                          )}}></Route> */}
                     <Route path ='/main'render={()=>
                         <Main>
-                            <Route path ='/main/a' component ={About}></Route> 
+                            <Route path ='/main/:value' component ={Info}></Route> 
                          </Main>
                          }>   
                      </Route>
